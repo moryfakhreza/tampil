@@ -20,7 +20,9 @@ class Test {
         return $this->conn->query($query);
     }
     
-
+    public function create() {
+        $query = "INSERT INTO tb_develop (status, ip_address, tag_value, file_name, date) VALUES ('$this->status', '$this->ip_address', '$this->tag_value', '$this->file_name', '$this->date')";
+        return $this->conn->query($query);
+    }
 }
-
 ?>

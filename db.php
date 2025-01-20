@@ -4,7 +4,7 @@ class Database {
     private $host="localhost";
     private $user= "root";
     private $pass= "";
-    private $dbname= "db_onedek";
+    private $dbname= "db_develop";
     public $conn;
 
     public function __construct() {
