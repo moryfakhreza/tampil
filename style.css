@@ -9,6 +9,44 @@ body {
 h1 {
     color: #007bff;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 6px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
 }
 
 table {
@@ -18,7 +56,8 @@ table {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    font-size: 14px; /* Perkecil ukuran font */
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 table thead {
@@ -27,7 +66,7 @@ table thead {
 }
 
 th, td {
-    padding: 8px 10px; /* Perkecil padding */
+    padding: 1px 2px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -44,20 +83,6 @@ tr:hover {
     background-color: #e9ecef;
 }
 
-button {
-    padding: 6px 10px; /* Perkecil padding tombol */
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
 .pagination {
     margin-top: 20px;
     display: flex;
@@ -68,7 +93,7 @@ button:hover {
 
 .pagination a {
     color: #007bff;
-    padding: 2px 6px;
+    padding: 8px 6px;
     text-decoration: none;
     margin: 0 5px;
     border: 1px solid #dee2e6;
@@ -101,11 +126,12 @@ button:hover {
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;       
+    margin: 15% auto;
     padding: 20px;
     border-radius: 5px;
     width: 60%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .close {
